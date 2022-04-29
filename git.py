@@ -5,7 +5,7 @@ import os
 
 # Command to execute
 # Using Windows OS command
-cmd0 = 'cd '
+
 cmd1 = 'git add .'
 cmd2 = 'git commit -m "Updates"'
 cmd3 = 'git push'
