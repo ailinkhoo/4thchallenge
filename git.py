@@ -2,15 +2,14 @@
 	
 # importing os module
 import os
-from turtle import hideturtle
 
 # Command to execute
 # Using Windows OS command
 
+msg = input("Message: ")
 
-cmd = input('Your message: ')
-
-cmd = 'git add . && git commit -m "$msg"'
+cmd = "git add . && git commit -m (f'{msg}') && git push"
 
 # Using os.system() method
 os.system(cmd)
+
