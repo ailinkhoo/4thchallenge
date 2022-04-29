@@ -6,7 +6,9 @@ import os
 # Command to execute
 # Using Windows OS command
 
-cmd = 'git add . && git commit -m "Updates" && git push'
+msg = input("Your message: ")
+
+cmd = 'git add . && git commit -m "{msg}" && git push'
 
 # Using os.system() method
 os.system(cmd)
