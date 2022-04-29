@@ -8,6 +8,8 @@ import os
 
 msg = input("Your message")
 
+os.system(msg)
+
 # cmd = 'git add . && git commit -m "Update" && git push'
 
 cmd = 'git add . && git commit -m "${msg}" && git push'
