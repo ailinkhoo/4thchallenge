@@ -10,5 +10,3 @@ cmd = 'git add . && git commit -m "Updates" && git push'
 
 # Using os.system() method
 os.system(cmd)
-os.system(cmd)
-os.system(cmd)
