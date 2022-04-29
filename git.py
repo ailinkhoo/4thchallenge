@@ -15,13 +15,13 @@ cmd = 'git add . && git commit -m "Update every tuesday" && git push'
 
 def update_github():
 	os.system(cmd)
-	os.system('echo  %date%-%time%')
+	print(time())
 
 # Task scheduling: https://www.geeksforgeeks.org/python-schedule-library/
 # Every tuesday at 20:00 update_github() is called
 # schedule.every().tuesday.at("20:00").do(update_github)
 
-schedule.every(1).minutes.do(update_github)
+schedule.every(2).minutes.do(update_github)
 
 # Loop so that the scheduling task
 # keeps on running all time.
