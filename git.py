@@ -8,6 +8,7 @@ import os
 
 
 cmd = 'git add . && git commit -m "Update" && git push'
+print(type(cmd))
 
 # Using os.system() method
 os.system(cmd)
