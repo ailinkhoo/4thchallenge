@@ -7,9 +7,10 @@ from turtle import hideturtle
 # Command to execute
 # Using Windows OS command
 
-msg = input('Your message: ')
 
-cmd = 'git add . && git commit -m "$msg" && git push'
+cmd = input('Your message: ')
+
+cmd = 'git add . && git commit -m "$msg"'
 
 # Using os.system() method
 os.system(cmd)
