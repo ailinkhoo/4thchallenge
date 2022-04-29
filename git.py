@@ -6,9 +6,11 @@ import os
 # Command to execute
 # Using Windows OS command
 
-msg = input("Your message")
 
-os.system(msg)
+
+cmd1 = 'msg = input("Your message")'
+
+os.system(cmd1)
 
 # cmd = 'git add . && git commit -m "Update" && git push'
 
