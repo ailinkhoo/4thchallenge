@@ -15,7 +15,7 @@ cmd = 'git add . && git commit -m "Update every tuesday" && git push'
 
 def update_github():
 	os.system(cmd)
-	os.system()
+	os.system('date')
 
 # Task scheduling
 # Every tuesday at 20:00 update_github() is called
