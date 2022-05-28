@@ -1,4 +1,5 @@
-# Python program to explain os.system() method
+# Python program to explain os.system() method 
+# #python script that runs git commands on a specified schedule.
 	
 # importing module
 import os
@@ -11,25 +12,28 @@ from datetime import datetime
 
 cmd = 'git add . && git commit -m "Update every tuesday" && git push'
 
-# Using os.system() method
-# Functions setup
+os.system(cmd)
 
-def update_github():
-	os.system(cmd)
-	print(datetime.now())
+# # Using os.system() method
+# # Functions setup
 
-# Task scheduling: https://www.geeksforgeeks.org/python-schedule-library/
-# Every tuesday at 20:00 update_github() is called
+# def update_github():
+# 	os.system(cmd)
+# 	print(datetime.now())
 
-schedule.every().tuesday.at("20:00").do(update_github)
+# # Task scheduling: https://www.geeksforgeeks.org/python-schedule-library/
 
-# for testing: schedule.every(1).minutes.do(update_github)
+# # Every Tuesday at 20:00 update_github() is called
 
-# Loop so that the scheduling task
-# keeps on running all time.
-while True:
+# schedule.every().tuesday.at("20:00").do(update_github)
 
-	# Checks whether a scheduled task
-	# is pending to run or not
-	schedule.run_pending()
-	time.sleep(1)
+# # for testing: schedule.every(1).minutes.do(update_github)
+
+# # Loop so that the scheduling task
+# # keeps on running all time.
+# while True:
+
+# 	# Checks whether a scheduled task
+# 	# is pending to run or not
+# 	schedule.run_pending()
+# 	time.sleep(1)
