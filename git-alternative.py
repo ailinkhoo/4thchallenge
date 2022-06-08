@@ -10,7 +10,7 @@ from datetime import datetime
 # Command to execute
 # Using Windows OS command
 
-cmd = 'git add . && git commit -m "Update every tuesday" && git push'
+cmd = 'git add . && git commit -m "Update" && git push'
 
 
 # Using os.system() method
