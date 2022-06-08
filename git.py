@@ -12,28 +12,27 @@ from datetime import datetime
 
 cmd = 'git add . && git commit -m "Update every tuesday" && git push'
 
-os.system(cmd)
 
-# # Using os.system() method
-# # Functions setup
+# Using os.system() method
+# Functions setup
 
-# def update_github():
-# 	os.system(cmd)
-# 	print(datetime.now())
+def update_github():
+	os.system(cmd)
+	print(datetime.now())
 
-# # Task scheduling: https://www.geeksforgeeks.org/python-schedule-library/
+# Task scheduling: https://www.geeksforgeeks.org/python-schedule-library/
 
-# # Every Tuesday at 20:00 update_github() is called
+# Every Tuesday at 20:00 update_github() is called
 
-# schedule.every().tuesday.at("20:00").do(update_github)
+schedule.every().tuesday.at("20:00").do(update_github)
 
-# # for testing: schedule.every(1).minutes.do(update_github)
+# for testing: schedule.every(1).minutes.do(update_github)
 
-# # Loop so that the scheduling task
-# # keeps on running all time.
-# while True:
+# Loop so that the scheduling task
+# keeps on running all time.
+while True:
 
-# 	# Checks whether a scheduled task
-# 	# is pending to run or not
-# 	schedule.run_pending()
-# 	time.sleep(1)
+	# Checks whether a scheduled task
+	# is pending to run or not
+	schedule.run_pending()
+	time.sleep(1)
